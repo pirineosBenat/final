@@ -1,0 +1,73 @@
+<!doctype html>
+<html  lang="es">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Ingreso Camping</title>
+		<link rel="stylesheet" type="text/css" href="camping.css">
+
+	</head>
+	<body>
+
+	 <!--MENU RESPONSIVE-->
+    <nav class="clearfix">
+
+    <!--Logo-->
+        <div id="logo">
+            <img id="imglogo" href="principal.html" src="img/logo_menu.png" />
+        </div>
+
+        <div id="buscador">
+             <form method="get" action="/search" id="search">
+                <input name="q" type="text" size="40" placeholder="Busca tu ruta..." />
+            </form>
+        </div>
+
+        <ul class="clearfix" id="botoiak">
+            <li><a href="principal.html">Inicio</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="ingreso.html">Ingreso</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li  id="buscador2">
+                <div>
+                 <form method="get" action="/search" id="search">
+                  <input name="q" type="text" size="40" placeholder="Busca tu ruta..." />
+                 </form>
+                </div>    
+            </li>
+
+        </ul>
+        <a href="#" id="pull"><img src="img/logo_menu.png" /></a>
+        <!--Buscador-->
+        
+        <!--Final buscador-->
+    </nav>
+    <!--final menu-->
+    <section id="contenedor">
+        <div id="formulario">
+            <h2>Introduce tus datos:</h2>
+            <form id="form" method="post">
+              <p>
+                Nombre: <input type="text" id="nombre" name="nombre" required="required" />
+                <br />
+                Dirección:<input type="text" id="direccion" name="direccion" required="required" />
+                <br />
+                Capacidad: <input type="text" id="capacidad" name="capacidad" required="required" />
+                <br />
+                Precio (persona/noche): <input type="text" id="precio" name="precio" required="required" />
+                <br />
+                Desayuno: <input type="text" id="capacidad" name="capacidad" required="required" />
+                <br />
+                <input type="submit" value="Añadir" />
+                <input type="reset" value="Borrar" /> 
+              </p>
+            </form>
+        </div> 
+    </section>
+    <footer>
+    <p class="copy">© 2014 PIRENEES MOUNSTAINS ROUTES SECCION ESPAÑA SA. Todos los derechos reservados.</p>
+       
+    </footer>
+
+	</body>
+
+</html>
