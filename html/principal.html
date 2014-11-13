@@ -1,0 +1,171 @@
+<!doctype html>
+<html  lang="es">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Principal</title>
+		<link rel="stylesheet" type="text/css" href="../css/principal.css">
+
+        <!--Esta siguiente linea es para coger de la nube un tipo de fuente estrecha-->
+        <!--<link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script>
+            $(function() {
+                var pull        = $('#pull');
+                    menu        = $('nav ul');
+                    menuHeight  = menu.height();
+
+                $(pull).on('click', function(e) {
+                    e.preventDefault();
+                    menu.slideToggle();
+
+                });
+
+                $(window).resize(function(){
+                    var w = $(window).width();
+                    if(w > 320 && menu.is(':hidden')) {
+                        menu.removeAttr('style');
+                    }
+                });
+            });
+        </script>
+
+
+	</head>
+	<body>
+
+    <header>
+        <img id="logoCabe" src="../img/logoCabe.png" alt="cabecera" title"cabecera"/>
+        <img id="cabe" src="../img/cabezera.png" alt="cabecera" title"cabecera"/>
+    </header>
+
+    <!--MENU RESPONSIVE-->
+    <nav class="clearfix">
+
+        <div id="buscador">
+             <form method="get" action="/search" id="search">
+                <input name="q" type="text" size="40" placeholder="Busca tu ruta..." />
+            </form>
+        </div>
+
+        <ul class="clearfix" id="botoiak">
+            <li><a href="../html/principal.html">Inicio</a></li>
+            <li><a href="../html/rutas.html">Rutas</a></li>
+            <li><a href="../html/ingreso.html">Ingreso</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li  id="buscador2">
+                <div>
+                 <form method="get" action="/search" id="search">
+                  <input name="q" type="text" size="40" placeholder="Busca tu ruta..." />
+                 </form>
+                </div>    
+            </li>
+
+        </ul>
+        <a href="#" id="pull">Menu</a>
+        <!--Buscador-->
+        
+        <!--Final buscador-->
+    </nav>
+    <!--final menu-->
+
+    <div id="rutas">
+        <p>Listado de Rutas</p>
+    </div>
+
+    <div id="sub">
+        <p>Los Pirineos nos ofrecen un sinfín de itinerarios de alta montaña. Rutas exigentes y espectaculares y de un nivel de dificultad </br>elevado que nos permitirán vivir sensaciones fuertes. A continuación encontrarás rutas clásicas y conocidas, pero también algunos </br>itinerarios más innovadores y bastante desconocidos. Os ofrecemos aquí toda la información que necesitas para disfrutar de una </br>experiencia inolvidable:</p>
+    </div>
+
+    <section id="contenedor">
+        <div id="colum1"></div>
+
+        <div id="colum2">
+            <div class="pack">
+
+                <h3>PICO RULHE</h3>
+                <img src="../img/central/1.jpg" alt="cabecera" title"cabecera"/>
+                <p><i>Se sitúa en un terreno muy pintoresco
+                con peñascos y cadenas de montañas.</i></p>
+                <span> <img src="../img/iconos/pointer.png"/><p>Ax-les-Thermes, Los Valles de Ax, Ariege, Mediodía-Pirineos</p></span>
+                <span class="tiempo"><img src="../img/iconos/tiempo.png"/><p>1:30h | 6:50h</p></span></br>
+                <span class="tiempo"><img src="../img/iconos/distancia.png"/><p>16 km</p></span></br>
+                <span class="tiempo"><img src="../img/iconos/pueblo.png" alt="Pueblo más cercano"/><p>Aston</p></span></br></br></br></br>
+
+            </div>
+            <div class="pack">
+                <h3>PICO NÉRASSOL</h3>
+                <img src="../img/central/2.jpg" alt="cabecera" title"cabecera"/>
+                <p>Se sitúa en un terreno muy pintoresco
+                con peñascos y cadenas de montañas</p>
+                <span> <img src="../img/iconos/pointer.png"/><p>Ax-les-Thermes, Los Valles de Ax, Ariege, Mediodía-Pirineos</p></span>
+                <span class="tiempo"><img src="../img/iconos/tiempo.png"/><p>1:30h | 6:50h</p></span></br>
+                <span class="tiempo"><img src="../img/iconos/distancia.png"/><p>16 km</p></span></br>
+                <span class="tiempo"><img src="../img/iconos/pueblo.png" alt="Pueblo más cercano"/><p>Aston</p></span></br></br></br></br>
+            </div>
+        </div>
+        <div id="colum3">
+            <div class="pack">
+                <h3>PICO PEDRONS</h3>
+                <img src="../img/central/3.jpg" alt="cabecera" title"cabecera"/>
+                <p>Se sitúa en un terreno muy pintoresco
+                con peñascos y cadenas de montañas</p>
+                <span> <img src="../img/iconos/pointer.png"/><p>Ax-les-Thermes, Los Valles de Ax, Ariege, Mediodía-Pirineos</p></span>
+                <span class="tiempo"><img src="../img/iconos/tiempo.png"/><p>1:30h | 6:50h</p></span></br>
+                <span class="tiempo"><img src="../img/iconos/distancia.png"/><p>16 km</p></span></br>
+                <span class="tiempo"><img src="../img/iconos/pueblo.png" alt="Pueblo más cercano"/><p>Aston</p></span></br></br></br></br>
+            </div>
+
+            <div class="pack">
+                <h3>PICO MINA</h3>
+                <img src="../img/central/4.jpg" alt="cabecera" title"cabecera"/>
+                <p>Se sitúa en un terreno muy pintoresco
+                con peñascos y cadenas de montañas</p>
+                <span> <img src="../img/iconos/pointer.png"/><p>Ax-les-Thermes, Los Valles de Ax, Ariege, Mediodía-Pirineos</p></span>
+                <span class="tiempo"><img src="../img/iconos/tiempo.png"/><p>1:30h | 6:50h</p></span></br>
+                <span class="tiempo"><img src="../img/iconos/distancia.png"/><p>16 km</p></span></br>
+                <span class="tiempo"><img src="../img/iconos/pueblo.png" alt="Pueblo más cercano"/><p>Aston</p></span></br></br></br></br>
+            </div>
+        </div>
+        <div id="colum4"> 
+           <div class="pack">
+                <h3>POSETS</h3>
+                <img src="../img/central/5.jpg" alt="cabecera" title"cabecera"/>
+                <p>Se sitúa en un terreno muy pintoresco
+                con peñascos y cadenas de montañas</p>
+                <span> <img src="../img/iconos/pointer.png"/><p>Ax-les-Thermes, Los Valles de Ax, Ariege, Mediodía-Pirineos</p></span>
+                <span class="tiempo"><img src="../img/iconos/tiempo.png"/><p>1:30h | 6:50h</p></span></br>
+                <span class="tiempo"><img src="../img/iconos/distancia.png"/><p>16 km</p></span></br>
+                <span class="tiempo"><img src="../img/iconos/pueblo.png" alt="Pueblo más cercano"/><p>Aston</p></span></br></br></br></br>
+            </div>
+
+            <div class="pack">
+                <h3>BESIBERRI</h3>
+                <img src="../img/central/6.jpg" alt="cabecera" title"cabecera"/>
+                <p>Se sitúa en un terreno muy pintoresco
+                con peñascos y cadenas de montañas</p>
+                <span> <img src="../img/iconos/pointer.png"/><p>Ax-les-Thermes, Los Valles de Ax, Ariege, Mediodía-Pirineos</p></span>
+                <span class="tiempo"><img src="../img/iconos/tiempo.png"/><p>1:30h | 6:50h</p></span></br>
+                <span class="tiempo"><img src="../img/iconos/distancia.png"/><p>16 km</p></span></br>
+                <span class="tiempo"><img src="../img/iconos/pueblo.png" alt="Pueblo más cercano"/><p>Aston</p></span></br></br></br></br>
+            </div>
+        </div>
+
+        <div id="colum5"></div>
+    </section>
+
+    <footer>
+    <p class="copy">© 2014 PIRENEES MOUNSTAINS ROUTES SECCION ESPAÑA SA. Todos los derechos reservados.</p>
+        <section>
+
+            <div id="red1"><img src="../img/btn1.png" alt="cabecera" title"cabecera"/></div>
+            <div id="red2"><img src="../img/btn2.png" alt="cabecera" title"cabecera"/></div>
+            <div id="red3"><img src="../img/btn3.png" alt="cabecera" title"cabecera"/></div>
+            <div id="red4"><img src="../img/btn4.png" alt="cabecera" title"cabecera"/></div>
+            <div id="red5"><img src="../img/btn5.png" alt="cabecera" title"cabecera"/></div>
+
+        </section>
+    </footer>
+
+	</body>
+
+</html>
