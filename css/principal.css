@@ -336,25 +336,8 @@ footer section img{
     font-family: arial;
 }
 
-#red1{
+.red{
 
-    margin-right: 10px;
-    -webkit-box-flex:1;
-}
-#red2{
-    margin-right: 10px;
-    -webkit-box-flex:1;
-}
-#red3{
-    margin-right: 10px;
-    -webkit-box-flex:1;
-}
-#red4{
-    margin-right: 10px;
-    -webkit-box-flex:1;
-}
-
-#red5{
     margin-right: 10px;
     -webkit-box-flex:1;
 }
