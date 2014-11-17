@@ -20,14 +20,14 @@
 }
 
 #logoCabe{
-    width: 350px;
+    width: 450px;
     position: absolute;
-    margin-left: 38%;
-    top: 50px;
+    left: 34%;
+    top: 210px;
 }
 
 #cabe{
-    height: 282px;
+    height: 450px;
     width: 100%;
 }
 
@@ -54,23 +54,10 @@ body {
 }
 
 
-/**********************logo cabecera*********************/
-#logo{
-
-    width: 100px;
-    height: 60px;
-    margin: 0px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 3;
-}
-
 /***********************navegador*************************/
 nav {
-    margin-top: 217px;
     z-index: 2;
-    opacity: 0.8;
+    opacity: 0.9;
     height: 60px;
     width: 100%;
     background: #cccccc;
@@ -165,30 +152,15 @@ nav li#buscador2{
     margin: 0 auto;
     z-index: 5;
     position: absolute;
-    top: 350px;
+    top: 500px;
     left: 10%;
 }
 
 #sub p{
     text-align: center;
     font-family: courier, 'courier new', monospace;
-    color: #bf782c;
-}
-
-#rutas{
-    padding: 5px;
-    border-radius: 5px;
-    position: absolute;
-    top: 277px;
-    left: 80%;
-    z-index: 4;
-    background-color: #bf782c;
-}
-
-#rutas p{
-    color: #ffffff;
-    font-size: 11pt;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #707070;
+    font-size: 16px;
 }
 
 .pack{
@@ -237,7 +209,7 @@ nav li#buscador2{
 #contenedor{
     /*border: 2px solid blue;*/
     position: absolute;
-    top: 420px;
+    top: 590px;
     width: 100%;
     min-width: 200px;
     padding-top: 20px;
@@ -311,7 +283,7 @@ nav li#buscador2{
 footer{
     position: absolute;
     top:250%;
-    margin-top: 150px;
+    margin-top: 260px;
     width: 100%;
     height: 75px;
     background-color: #C0C0C0;
