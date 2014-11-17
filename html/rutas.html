@@ -1,13 +1,3 @@
-<!-- 
-TODO 
-	quitar bordes				DONE
-	sombras como en principal	DONE
-	iconos en ficha				DONE
-	responsive mejor
-	mapa ruta google
-	div contenedor dejar 2 columnas blancas a los lados 	DONE
-	-->
-
 <!doctype html>
 <html  lang="es">
 	<head>
@@ -15,13 +5,34 @@ TODO
 		<title>Rutas</title>
 		<link rel="stylesheet" type="text/css" href="../css/rutas.css">
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script>
+            $(function() {
+                var pull        = $('#pull');
+                    menu        = $('nav ul');
+                    menuHeight  = menu.height();
+
+                $(pull).on('click', function(e) {
+                    e.preventDefault();
+                    menu.slideToggle();
+
+                });
+
+                $(window).resize(function(){
+                    var w = $(window).width();
+                    if(w > 320 && menu.is(':hidden')) {
+                        menu.removeAttr('style');
+                    }
+                });
+            });
+        </script>
 
 	</head>
 	<body>
 
     <header>
         <img id="logoCabe" src="../img/logoCabe.png" alt="cabecera" title"cabecera"/>
-        <img id="cabe" src="../img/cabezera.png" alt="cabecera" title"cabecera"/>
+        <img id="cabe" src="../img/rutes.jpg" alt="cabecera" title"cabecera"/>
     </header>
 
     <!--MENU RESPONSIVE-->
@@ -57,8 +68,8 @@ TODO
     <section id="contenedor">
     	<div id="ficha">
     		<div id="titulo">
-    			<img src="../img/iconos/ruta.png" alt="ruta"><h1>RUTA</h1>
-    			<h1>LOS TRES INFIERNOS</h1><br /><br />
+    			<img src="../img/iconos/rute.png" alt="ruta"><h1><b>RUTA<b></h1>
+    			<h2>LOS TRES INFIERNOS</h2><br /><br />
     		</div>
     		<div id="tabla">
    			 <table id = "tablaizda">
