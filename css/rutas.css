@@ -394,111 +394,12 @@ footer section img{
 
 @media only screen and ( max-width: 410px){
 
-
-        header{
-            display: none;
-        }
-        #rutas{
-            display: none;
-        }
-        nav li#buscador2{
-            display: block;
-        }
-
-       nav{
-            margin-top: 50px;
-            opacity: 0.9;
-            text-align: center;
-            border-bottom: 0;
-            height: auto;
-       }
-
-       nav ul{
-            margin: 0 auto;
-           width: 100%;
-           display: none;
-           height: auto;
-       }
-        nav a#pull {
-            color: #bf782c;
-            display: block;
-            background-color: #000;
-            width: 100%;
-            position: absolute;
-            top: -50px;
-        }
-        /*para el texto "Menu"*/
-        nav a#pull:hover{
-            color: #fff;
-        }
-
-        nav a#pull:after {
-            content: "";
-            background: url('../img/nav-icon-marron.png') no-repeat;
-            width: 30px;
-            height: 30px;
-            display: block;
-            position: absolute;
-            right: 15px;
-            top: 20px;
-           
-        }
-
-        nav a#pull:hover:after{
-            content: "";
-            background: url('../img/nav-icon.png') no-repeat;
-            width: 30px;
-            height: 30px;
-            display: block;
-            position: absolute;
-            right: 15px;
-            top: 20px;
-
-        }
-
-        #buscador{
-            display: none;
-        }
-        #ficha{
-            margin-top: -250px;
-        }
-        #desc{
-            display: none;
-        }
-        .mapa{
-            padding-bottom: 56.25%;
-            overflow: hidden;
-        }
-        .mapa iframe{
-            position: absolute;
-            left: -10px;
-            top: 650px;
-            min-width: 300px;
-            width: 100%;
-            height: 220px;
-        }
-        #tabla{
-            padding: 0px;
-            margin: 0px;
-            width: 100%;
-            position: relative;
-        }
-        #tabladcha{
-         clear:both;
-         float: left;  
-        }
-
-        /*cambiamos propiedades del footer*/
-        footer{
-            height: 50px;
-             background-color: #000;
-             margin-top: -500px;
-             max-width: 100%;
-        }
-
-        .copy{
-            display: none;
-        }
+    #tabla{
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        position: relative;
+    }
 
 }
 
