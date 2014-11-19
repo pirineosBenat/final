@@ -131,6 +131,7 @@ nav li#buscador2{
 }
 
 #formulario input{
+ opacity: 0.85;
  font: 300 20px courier, 'courier new', monospace;
  margin: 5px 0 10px 0;
  border: 0px solid #848484; 
