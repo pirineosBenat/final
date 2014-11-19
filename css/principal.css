@@ -187,6 +187,10 @@ nav li#buscador2{
     font-size: 20px;
     color: #bf782c;
 }
+.pack a{
+    text-decoration: none;
+}
+
 
 .pack p{
     padding: 5px;
@@ -220,6 +224,7 @@ nav li#buscador2{
     -webkit-box-align:center; 
     -webkit-box-align:stretch; 
 }
+
 #colum1{
     max-width: 100px;
     min-width: 0px;
